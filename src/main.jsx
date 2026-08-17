@@ -6,6 +6,8 @@ import "./styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Route path="/" element={<Home />} />
+    <BrowserRouter basename="/Trai-Track">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
