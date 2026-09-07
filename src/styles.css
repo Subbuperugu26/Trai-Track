@@ -43,6 +43,11 @@
   color: #ccc;
   font-size: 0.85rem;
 }
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 /* Dashboard headings */
 .dashboard-container h2 {
   color: var(--dark);
