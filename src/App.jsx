@@ -5,7 +5,9 @@ import Tracker from "./pages/Tracker";
 import Dashboard from "./pages/Dashboard";
 import Reports from "./pages/Reports";
 import About from "./pages/About";
-
+import Footer from './components/Footer';
+// ...
+<Footer />
 function Navbar() {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
