@@ -78,27 +78,13 @@ export default function Dashboard() {
   const top7 = employees.slice(0,7);
 
   const employeeChart = {
-  labels: top7.map(x => x.employee),
-  datasets: [{
-    label: "Images Completed",
-    data: top7.map(x => x.images),
-    backgroundColor: "#0798d1",
-    borderColor: "#056b9b",
-    borderWidth: 1,
-    borderRadius: 6
-   }]
+    labels: top7.map(x=>x.employee),
+    datasets: [{label:"Images Completed", data:top7.map(x=>x.images), borderWidth:1}]
   };
 
   const batchChart = {
-  labels: batches.map(x => x.batch),
-  datasets: [{
-    label: "Images Completed",
-    data: batches.map(x => x.images),
-    backgroundColor: "#0798d1",
-    borderColor: "#056b9b",
-    borderWidth: 1,
-    borderRadius: 6
-    }]
+    labels: batches.map(x=>x.batch),
+    datasets: [{label:"Images Completed", data:batches.map(x=>x.images), borderWidth:1}]
   };
 
   const unique = key => [...new Set(data.map(r=>String(r[key]??"").trim()).filter(Boolean))].sort();
